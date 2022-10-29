@@ -9,6 +9,7 @@ const config = {
     extend: {
       colors: {
         'custom-teal': '#e5fef5',
+        'pine-green': '#01796f'
       }
     },
 
