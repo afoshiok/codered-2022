@@ -49,7 +49,7 @@
         <div class="col-start-2 justify-self-center mt-5">
             <div>
                 <label for="default-input" class="block mb-px text-sm font-medium text-gray-900 dark:text-gray-300">Time Active (in hours)</label>
-                <input type="text" id="time_active" class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/8 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <input type="text" name="time_active" class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/8 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             </div>
         </div>
     </div>
