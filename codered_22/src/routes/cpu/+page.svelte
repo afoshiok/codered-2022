@@ -29,8 +29,8 @@
         </div>
 
         <!-- Time Active  Input -->
-        <div class="row-start-3 col-start-3 col-end-4">
-            
+        <div class="row-start-3 col-start-3 col-end-5">
+                
         </div>
 
     </div>
