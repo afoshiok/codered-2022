@@ -8,5 +8,5 @@
 <!-- Navbar -->
 
 <Nav/>
-<slot />
+  <slot />
 <Foot/>
