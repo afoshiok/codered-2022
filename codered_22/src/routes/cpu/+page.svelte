@@ -1,5 +1,5 @@
 <h1 class="flex justify-center items-center pt-60 font-bold text-3xl text-pine-green">CPU Carbon Emissions</h1>
-<form >
+<form method="POST">
     <div class="grid grid-cols-6 grid-rows-2 gap-4">
         <!-- "Region Name" Input -->
         <div class="block col-start-3 col-end-5">
@@ -11,7 +11,7 @@
         {#if check}
         <div class="row-start-2 col-start-3 col-end-4">
             <label for="base-input" class="block mb-px text-sm font-medium text-gray-900 dark:text-gray-300">Number of CPUs</label>
-            <input type="text" id="num_cpu" name="num_cpu" value=1 class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" disabled>
+            <input type="number" id="num_cpu" name="num_cpu" value=1 class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" disabled>
         </div>
         
         <!-- Percent Load Input -->
@@ -23,7 +23,7 @@
         {:else}
         <div class="row-start-2 col-start-3 col-end-4">
             <label for="base-input" class="block mb-px text-sm font-medium text-gray-900 dark:text-gray-300">Number of CPUs</label>
-            <input type="text" id="num_cpu" name="num_cpu"  class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
+            <input type="number" id="num_cpu" name="num_cpu"  class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
         </div>
         
         <!-- Percent Load Input -->
@@ -49,7 +49,7 @@
         <div class="col-start-2 justify-self-center mt-5">
             <div>
                 <label for="default-input" class="block mb-px text-sm font-medium text-gray-900 dark:text-gray-300">Time Active (in hours)</label>
-                <input type="text" id="default-input" class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/8 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <input type="text" id="time_active" class="bg-gray-50 border border-pine-green text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/8 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             </div>
         </div>
     </div>
@@ -62,3 +62,9 @@
 <script lang="ts">
     let check: boolean = false
 </script>
+
+<style>
+    ::-webkit-input-placeholder {
+   font-style: italic;
+}
+</style>
