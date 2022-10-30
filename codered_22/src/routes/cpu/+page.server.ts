@@ -38,10 +38,14 @@ export const actions = {
     .then(json => {
         const res = json
         co2_total = res.co2e
-        console.log(co2_total)
+        console.log(co2_total.toFixed(2))
+
+        return co2_total
 
     })
 
-     throw redirect(303, '/')
+    return {
+        success: true
+    }
     }
   };
